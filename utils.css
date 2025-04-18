@@ -1,0 +1,145 @@
+.showMsgBG{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#0004;
+    z-index:10000;
+}
+.showMsgPopUp{
+    position:fixed;
+    text-align:center;
+    top:50%;
+    left:calc(50% - 260px);
+    width:500px;
+    padding:10px;
+    border-radius:6px;
+    z-index:10001;
+    transform: translateY(-50%);
+    animation: pulse; 
+    animation-duration: 0.2s; 
+}
+.msgExit{
+    animation: pulse1; 
+    animation-duration: 0.2s; 
+}
+.showMsgTitle{
+    padding:20px 10px 20px 10px;
+    font-size:30px;
+    margin:-10px -10px 5px -10px;
+    border-radius:5px 5px 0 0;
+    font-weight:bold;
+}
+.showMsgPopUpText{
+    padding:0 20px 0 20px;
+    font-size:16px;
+}
+.msgButtonsDiv{
+    margin:15px 0 15px 0;
+}
+.showMsgBtn{
+    padding:10px;
+    margin:5px;
+    border:none;
+    border-radius:4px;
+    font-size:18px;
+    min-width:100px;
+    cursor:pointer;
+}
+.showMsgBtn:hover{
+    filter: brightness(110%);
+}
+.msgIcon{
+    width:60px;
+}
+.textInput{
+    padding:10px;
+    font-size:20px;
+    border: 1px solid lightgray;
+    border-radius:5px;
+    margin:15px 0 5px 0;
+    width:calc(100% - 60px);
+}
+.validationDiv{
+    padding:15px;
+    background:lightgray;
+    margin:0 -10px 0 -10px;
+}
+.big-carousel-picsContainer{
+    position:relative;
+    text-align:center;
+    width:100%;
+    height:60vh;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scrollbar-width: none;
+}
+.big-carousel-picContainer{
+    display:inline-block;
+    height:100%;
+    text-align:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.big-carousel-pic{
+    height:100%;
+    margin:0 10px 0 10px;
+}
+.big-carousel-arrowLeft{
+    font-family:arial;
+    position:absolute;
+    padding:8px 0 8px 0;
+    width:40px;
+    border-radius:50%;
+    top:calc(50% - 20px);
+    left:20px;
+    text-align:center;
+    background:white;
+    color:gray;
+    font-size:20px;
+    cursor:pointer;
+}
+.big-carousel-arrowRight{
+    font-family:arial;
+    position:absolute;
+    padding:8px 0 8px 0;
+    width:40px;
+    border-radius:50%;
+    top:calc(50% - 20px);
+    right:20px;
+    text-align:center;
+    background:white;
+    color:gray;
+    font-size:20px;
+    cursor:pointer;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale3d(0.5,0.5,0.5) translateY(-100%)
+        
+    }
+
+    50% {
+        transform: scale3d(1.05,1.05,1.05) translateY(-40%)
+    }
+
+    to {
+        transform: scaleX(1) translateY(-50%)
+    }
+}
+@keyframes pulse1 {
+    0% {
+        transform: scaleX(1) translateY(-50%)
+    }
+
+    50% {
+        transform: scale3d(1.05,1.05,1.05) translateY(-40%)
+    }
+
+    to {
+        transform: scale3d(0.5,0.5,0.5) translateY(-100%)
+    }
+}
