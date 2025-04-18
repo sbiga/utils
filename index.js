@@ -66,7 +66,7 @@ let Big = {
             if(params.id) bg.attr("id", params.id + "_bg");
             
             if(params.icon){ 
-                var msgIcon = $(document.createElement("img")).addClass("msgIcon").attr("src","https://big-it.com.ar/mymsg/images/" + params.icon + ".svg").appendTo(popUp);
+                var msgIcon = $(document.createElement("img")).addClass("msgIcon").attr("src","images/" + params.icon + ".svg").appendTo(popUp);
                 msgIcon.on("error", function(){
                     $(this).remove();
                 });
