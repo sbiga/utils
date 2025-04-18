@@ -1,7 +1,7 @@
 var script = document.createElement('script');
 var myStyle = document.createElement('link');
 script.src = "https://code.jquery.com/jquery-3.6.3.min.js";
-myStyle.href = "https://big-it.com.ar/mymsg/styles.css";
+myStyle.href = "styles.css";
 myStyle.rel = "stylesheet";
 document.getElementsByTagName('head')[0].appendChild(script);
 document.getElementsByTagName('head')[0].appendChild(myStyle);
